@@ -1,0 +1,82 @@
+/* CONTACT PAGE STYLING */
+
+/* HERO */
+.contact-hero {
+  background: #0a0f14 url("assets/cta2.jpg") center/cover no-repeat;
+  padding: 130px 0;
+  color: #fff;
+}
+.contact-hero .hero-title {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.contact-hero .hero-subtext {
+  font-size: 1.15rem;
+  opacity: 0.9;
+}
+
+/* CONTACT SECTION */
+.contact-info-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.contact-info-box i {
+  font-size: 28px;
+  color: #b22222;
+}
+.contact-info-box h6 {
+  margin: 0;
+  font-weight: 700;
+}
+.contact-info-box p {
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Social Icons */
+.social-contact a {
+  display: inline-flex;
+  background: #b22222;
+  color: #fff;
+  margin-right: 8px;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.social-contact a:hover {
+  background: #8e1616;
+}
+
+/* Form */
+.contact-form-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+.contact-form-box input,
+.contact-form-box textarea,
+.contact-form-box select {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.contact-form-box input:focus,
+.contact-form-box textarea:focus,
+.contact-form-box select:focus {
+  border-color: #b22222;
+  box-shadow: none;
+}
+
+/* CTA */
+.contact-cta {
+  background: #b22222;
+}
+.contact-cta h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
