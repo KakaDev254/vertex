@@ -467,3 +467,399 @@ h5 {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 15px;
 }
+/* ================= ABOUT PAGE STYLES ================= */
+
+/* Hero */
+.about-hero {
+  height: 45vh;
+  background: url("assets/about.jpg") center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+.about-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.about-hero .container {
+  position: relative;
+}
+.about-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.about-hero p {
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+/* ============================================================
+   ABOUT SECTION - OVERLAY CARD + EXTENDED IMAGE (NO RADIUS)
+   ============================================================ */
+
+.about-overlay-section {
+  background: #f5f5f5;
+  position: relative;
+  padding: 110px 0;
+}
+
+.about-overlay-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* ======================= TEXT CARD ======================= */
+.about-text-card {
+  background: #b22222; /* deep premium blue */
+  color: #fff;
+  padding: 45px 40px;
+  width: 48%;
+  min-width: 350px;
+  z-index: 3;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+  border-radius: 0; /* ← removed rounding */
+  position: relative;
+  margin-right: -90px; /* ← OVERLAP INTO IMAGE */
+  margin-top: 50px; /* ← makes image appear taller */
+}
+
+.about-text {
+  font-size: 1.06rem;
+  line-height: 1.68;
+}
+
+.about-social a {
+  color: #fff;
+  background: #b22222;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px; /* square modern icon buttons */
+  margin-right: 10px;
+  font-size: 1.15rem;
+  transition: 0.3s;
+}
+.about-social a:hover {
+  background: #8e1616;
+}
+
+/* ======================= IMAGE SIDE ======================= */
+.about-image-box {
+  width: 52%;
+  min-width: 350px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-img {
+  width: 100%;
+  height: 460px; /* 🔥 Taller image */
+  object-fit: cover;
+  border-radius: 0; /* ← removed rounding */
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.22);
+}
+
+/* ======================= RESPONSIVE HANDLING ======================= */
+@media (max-width: 992px) {
+  .about-overlay-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-text-card {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: -40px; /* keeps overlap feel slightly */
+  }
+
+  .about-image-box {
+    width: 100%;
+  }
+
+  .about-img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-text-card {
+    padding: 30px;
+  }
+  .about-img {
+    height: 300px;
+  }
+}
+
+/* ================= PARTNERSHIP JOURNEY - CREATIVE LAYOUT ================= */
+
+.journey-section {
+  background: #ffffff;
+  padding: 100px 0;
+}
+
+.journey-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+/* Founder Cards (Left & Right) */
+.journey-founder {
+  text-align: center;
+  flex: 1;
+}
+
+/* Founder Images */
+.journey-img {
+  width: 100%;
+  max-width: 300px;
+  height: 380px; /* Taller look */
+  object-fit: cover;
+  border-radius: 0; /* No border radius */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+  background: #ddd;
+}
+
+.founder-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 15px;
+  color: #111;
+}
+
+.founder-role {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Center Story Box */
+.journey-text {
+  flex: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+.journey-box {
+  background: #f7f7f7;
+  padding: 35px 30px;
+  border-radius: 0; /* Straight corners */
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  max-width: 550px;
+  border-left: 6px solid #b22222; /* You may remove if unwanted */
+}
+
+.journey-box p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Responsive Layout Handling */
+@media (max-width: 992px) {
+  .journey-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 45px;
+  }
+
+  .journey-founder {
+    width: 100%;
+  }
+
+  .journey-img {
+    width: 100%;
+    max-width: 100%;
+    height: 420px; /* Larger & full display on tablet/mobile */
+  }
+
+  .journey-text {
+    order: 2; /* Keeps story between the founders */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .journey-box {
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .journey-img {
+    height: 380px; /* Still large and bold on small screens */
+  }
+
+  .journey-box {
+    padding: 28px;
+  }
+}
+
+/* ============================================================
+   MISSION & VALUES SECTION - RED + DIVIDER STYLE
+   ============================================================ */
+
+.mission-values-red {
+  background: #b22222; /* Brand red */
+  padding: 90px 0;
+  color: #fff;
+}
+
+/* Title styling */
+.mission-values-red .section-title {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Flex layout for three items */
+.mv-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Individual item style */
+.mv-item {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.mv-item h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+/* vertical line */
+.mv-divider {
+  width: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  height: 110px;
+  align-self: center;
+}
+
+/* Paragraph styling */
+.mv-item p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #fff;
+  opacity: 0.95;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+  .mv-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mv-divider {
+    display: none; /* No vertical lines on phone */
+  }
+  .mv-item {
+    margin-bottom: 35px;
+  }
+}
+
+/* ============================================================
+   GRAPHICAL PROCESS TIMELINE
+   ============================================================ */
+
+.approach-timeline {
+  background: #ffffff;
+  padding: 100px 0;
+}
+
+.timeline-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: nowrap;
+}
+
+/* Step Blocks */
+.timeline-step {
+  text-align: center;
+  width: 22%;
+}
+
+.timeline-step h5 {
+  font-weight: 700;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.timeline-step p {
+  font-size: 0.97rem;
+  opacity: 0.85;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+/* Circle Icons */
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background: #b22222;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+  background: #8e1616;
+}
+
+/* Connecting Line */
+.timeline-line {
+  flex: 1;
+  height: 3px;
+  background: #b22222;
+  opacity: 0.9;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .timeline-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .timeline-line {
+    width: 3px;
+    height: 55px;
+    margin: auto;
+  }
+
+  .timeline-step {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .icon-circle {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+  }
+}
