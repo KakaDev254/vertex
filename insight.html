@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insights | Vertex Technology Partners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= TOP INFO BAR ================= -->
+    <div
+      class="top-bar text-white py-2 px-3 d-flex justify-content-between align-items-center"
+    >
+      <div class="left-links">
+        <a href="#" class="top-link">BOOK A CALL</a>
+        <a href="#" class="top-link">SUPPORT</a>
+      </div>
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+
+    <!-- ================= MAIN NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg main-nav">
+      <div class="container-fluid px-5">
+        <!-- LOGO SECTION -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <!-- Replace with your Vertex logo -->
+          <img src="assets/logo.png" alt="Vertex Logo" height="60" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="mainNav"
+        >
+          <ul class="navbar-nav gap-4 text-uppercase fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Insights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="search-btn d-none d-lg-block">
+          <i class="bi bi-search"></i>
+          <!-- Bootstrap icon -->
+        </div>
+      </div>
+    </nav>
+    <!-- ================= INSIGHTS HERO ================= -->
+    <section class="insights-hero">
+      <div class="container text-center">
+        <h1>Business & AI Insights</h1>
+        <p>
+          Actionable intelligence that helps leaders make smarter, faster, and
+          more confident decisions.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= INSIGHTS SECTION - PANEL UI ================= -->
+    <section class="insights-panel-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Business & AI Insights</h2>
+          <p class="section-subtext">
+            Practical intelligence that drives smarter decisions and measurable
+            impact.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- LEFT NAV -->
+          <div class="col-lg-4">
+            <ul class="insight-nav">
+              <li class="active" data-target="insight1">
+                Customer & Lead Generation
+              </li>
+              <li data-target="insight2">Automation & Process Efficiency</li>
+              <li data-target="insight3">Revenue & Growth</li>
+              <li data-target="insight4">Predictive & Forecasting</li>
+              <li data-target="insight5">Cost & Resource Optimization</li>
+            </ul>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="col-lg-8">
+            <!-- Insight 1 -->
+            <div id="insight1" class="insight-panel active">
+              <h3>Customer & Lead Generation Insights</h3>
+
+              <div class="panel-block">
+                <span class="label">Business Problem</span>
+                <p>
+                  Spending on marketing without knowing which channels or leads
+                  actually convert.
+                </p>
+              </div>
+
+              <div class="panel-block">
+                <span class="label">AI Insight We Deliver</span>
+                <ul>
+                  <li>High-quality lead sources</li>
+                  <li>Customers most likely to convert</li>
+                  <li>Optimal engagement timing and channels</li>
+                </ul>
+              </div>
+
+              <div class="impact-row">
+                <span>Better leads</span>
+                <span>Lower marketing costs</span>
+                <span>Higher conversion rates</span>
+              </div>
+            </div>
+
+            <!-- Insight 2 -->
+            <div id="insight2" class="insight-panel">
+              <h3>Automation & Process Efficiency Insights</h3>
+
+              <div class="panel-block">
+                <span class="label">Business Problem</span>
+                <p>Manual operations slowing teams and increasing costs.</p>
+              </div>
+
+              <div class="panel-block">
+                <span class="label">AI Insight We Deliver</span>
+                <ul>
+                  <li>Tasks ready for automation</li>
+                  <li>Operational bottlenecks</li>
+                  <li>Time and cost inefficiencies</li>
+                </ul>
+              </div>
+
+              <div class="impact-row">
+                <span>Faster operations</span>
+                <span>Lower costs</span>
+                <span>High-value work focus</span>
+              </div>
+            </div>
+
+            <!-- Insight 3 -->
+            <div id="insight3" class="insight-panel">
+              <h3>Revenue & Growth Insights</h3>
+
+              <div class="panel-block">
+                <span class="label">Business Problem</span>
+                <p>Unclear revenue drivers and growth constraints.</p>
+              </div>
+
+              <div class="panel-block">
+                <span class="label">AI Insight We Deliver</span>
+                <ul>
+                  <li>Revenue-driving customers and products</li>
+                  <li>Upsell and pricing opportunities</li>
+                  <li>Revenue leakage patterns</li>
+                </ul>
+              </div>
+
+              <div class="impact-row">
+                <span>Increased revenue</span>
+                <span>Smarter pricing</span>
+                <span>Predictable growth</span>
+              </div>
+            </div>
+
+            <!-- Insight 4 -->
+            <div id="insight4" class="insight-panel">
+              <h3>Predictive & Forecasting Insights</h3>
+
+              <div class="panel-block">
+                <span class="label">Business Problem</span>
+                <p>Reactive decision-making instead of proactive planning.</p>
+              </div>
+
+              <div class="panel-block">
+                <span class="label">AI Insight We Deliver</span>
+                <ul>
+                  <li>Sales and demand forecasts</li>
+                  <li>Cash flow predictions</li>
+                  <li>Early risk and opportunity signals</li>
+                </ul>
+              </div>
+
+              <div class="impact-row">
+                <span>Better planning</span>
+                <span>Reduced risk</span>
+                <span>Confident decisions</span>
+              </div>
+            </div>
+
+            <!-- Insight 5 -->
+            <div id="insight5" class="insight-panel">
+              <h3>Cost & Resource Optimization Insights</h3>
+
+              <div class="panel-block">
+                <span class="label">Business Problem</span>
+                <p>
+                  Rising costs with limited visibility into optimization
+                  opportunities.
+                </p>
+              </div>
+
+              <div class="panel-block">
+                <span class="label">AI Insight We Deliver</span>
+                <ul>
+                  <li>Operational and infrastructure cost drivers</li>
+                  <li>Cloud and staffing inefficiencies</li>
+                  <li>Optimal resource allocation strategies</li>
+                </ul>
+              </div>
+
+              <div class="impact-row">
+                <span>Lower costs</span>
+                <span>Higher margins</span>
+                <span>Sustainable scaling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-dark">
+      <div class="container py-5">
+        <div class="row g-4">
+          <!-- Brand + About -->
+          <div class="col-md-4">
+            <div class="footer-logo mb-3">
+              <img
+                src="assets/logo.png"
+                alt="Vertex Technology Partners"
+                height="55"
+              />
+            </div>
+            <p class="footer-about">
+              Vertex Technology Partners delivers advanced Data Intelligence,
+              AI-driven systems, scalable engineering and strategic technology
+              consulting to empower digital transformation.
+            </p>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-3">
+            <h5 class="footer-title">Services</h5>
+            <ul class="footer-links">
+              <li><a href="services.html">Data Intelligence Solutions</a></li>
+              <li><a href="services.html">AI & Machine Learning</a></li>
+              <li><a href="services.html">Engineering & DevOps</a></li>
+              <li><a href="services.html">Strategic Consulting</a></li>
+            </ul>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-md-3">
+            <h5 class="footer-title">Useful Links</h5>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Insights & Articles</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact + Social -->
+          <div class="col-md-2">
+            <h5 class="footer-title">Connect</h5>
+            <ul class="footer-links">
+              <li><a href="#">info@vertextech.com</a></li>
+              <li><a href="#">+254 758 898 065</a></li>
+              <li><a href="#">Nairobi, Kenya</a></li>
+            </ul>
+
+            <div class="footer-social mt-3">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom text-center mt-4 pt-3">
+          <p>© 2024 Vertex Technology Partners — All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll(".insight-nav li").forEach((item) => {
+        item.addEventListener("click", () => {
+          document
+            .querySelectorAll(".insight-nav li")
+            .forEach((li) => li.classList.remove("active"));
+          document
+            .querySelectorAll(".insight-panel")
+            .forEach((panel) => panel.classList.remove("active"));
+
+          item.classList.add("active");
+          document.getElementById(item.dataset.target).classList.add("active");
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

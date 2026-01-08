@@ -1,3 +1,9 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -86,7 +92,7 @@ h5 {
 .hero-banner {
   position: relative;
   height: 75vh;
-  background: url("assets/hero-bg.jpg") center/cover no-repeat;
+  background: url("assets/bg1.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -523,7 +529,7 @@ h5 {
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
   border-radius: 0; /* ← removed rounding */
   position: relative;
-  margin-right: -90px; /* ← OVERLAP INTO IMAGE */
+  margin-right: 0; /* ← OVERLAP INTO IMAGE */
   margin-top: 50px; /* ← makes image appear taller */
 }
 
@@ -597,113 +603,78 @@ h5 {
   }
 }
 
-/* ================= PARTNERSHIP JOURNEY - CREATIVE LAYOUT ================= */
+/* ================= JOURNEY SECTION ================= */
 
 .journey-section {
-  background: #ffffff;
+  background: #fff;
   padding: 100px 0;
 }
 
-.journey-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 35px;
-  flex-wrap: nowrap;
-  margin-top: 50px;
-}
-
-/* Founder Cards (Left & Right) */
-.journey-founder {
+/* Founder cards */
+.founder-card {
   text-align: center;
-  flex: 1;
 }
 
-/* Founder Images */
-.journey-img {
+.founder-image-wrapper {
+  position: relative;
+}
+
+.founder-image-wrapper img {
   width: 100%;
-  max-width: 300px;
-  height: 380px; /* Taller look */
+  height: 420px;
   object-fit: cover;
-  border-radius: 0; /* No border radius */
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
-  background: #ddd;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
 }
 
-.founder-name {
-  font-size: 1.4rem;
+/* LinkedIn icon */
+.linkedin-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: #0a66c2;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Text */
+.founder-card h4 {
+  margin-top: 18px;
   font-weight: 700;
-  margin-top: 15px;
-  color: #111;
 }
 
-.founder-role {
+.role {
+  display: block;
   font-size: 0.9rem;
   opacity: 0.7;
 }
 
-/* Center Story Box */
-.journey-text {
-  flex: 1.6;
-  display: flex;
-  justify-content: center;
+.contact {
+  margin-top: 6px;
+  font-size: 0.95rem;
 }
 
-.journey-box {
+.bio {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Shared journey story */
+.journey-story {
+  margin-top: 70px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
   background: #f7f7f7;
-  padding: 35px 30px;
-  border-radius: 0; /* Straight corners */
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
-  max-width: 550px;
-  border-left: 6px solid #b22222; /* You may remove if unwanted */
-}
-
-.journey-box p {
+  border-left: 6px solid #b22222;
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #333;
-}
-
-/* Responsive Layout Handling */
-@media (max-width: 992px) {
-  .journey-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 45px;
-  }
-
-  .journey-founder {
-    width: 100%;
-  }
-
-  .journey-img {
-    width: 100%;
-    max-width: 100%;
-    height: 420px; /* Larger & full display on tablet/mobile */
-  }
-
-  .journey-text {
-    order: 2; /* Keeps story between the founders */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .journey-box {
-    max-width: 100%;
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .journey-img {
-    height: 380px; /* Still large and bold on small screens */
-  }
-
-  .journey-box {
-    padding: 28px;
-  }
 }
 
 /* ============================================================
@@ -861,5 +832,118 @@ h5 {
     width: 70px;
     height: 70px;
     font-size: 28px;
+  }
+}
+/* ================= INSIGHTS HERO ================= */
+
+.insights-hero {
+  background: #111;
+  padding: 120px 0;
+  color: #fff;
+}
+
+.insights-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.insights-hero p {
+  max-width: 720px;
+  margin: 15px auto 0;
+  opacity: 0.85;
+  font-size: 1.1rem;
+}
+
+/* ================= INSIGHTS PANEL UI ================= */
+
+.insights-panel-section {
+  background: #fff;
+}
+
+/* LEFT NAV */
+.insight-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.insight-nav li {
+  padding: 16px 20px;
+  border-left: 4px solid transparent;
+  background: #f6f6f6;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.insight-nav li.active,
+.insight-nav li:hover {
+  border-left-color: #b22222;
+  background: #fff;
+}
+
+/* RIGHT PANEL */
+.insight-panel {
+  display: none;
+  background: #fff;
+  padding: 35px;
+  border: 1px solid #eee;
+}
+
+.insight-panel.active {
+  display: block;
+}
+
+.insight-panel h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* BLOCKS */
+.panel-block {
+  margin-bottom: 20px;
+}
+
+.panel-block .label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #b22222;
+  margin-bottom: 6px;
+}
+
+.panel-block ul {
+  padding-left: 18px;
+}
+
+.panel-block li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+/* IMPACT */
+.impact-row {
+  margin-top: 20px;
+}
+
+.impact-row span {
+  display: inline-block;
+  margin-right: 12px;
+  background: #f7f7f7;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 992px) {
+  .insight-nav {
+    display: none;
+  }
+
+  .insight-panel {
+    display: block;
+    margin-bottom: 30px;
   }
 }
