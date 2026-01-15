@@ -30,8 +30,8 @@
       class="top-bar text-white py-2 px-3 d-flex justify-content-between align-items-center"
     >
       <div class="left-links">
-        <a href="#" class="top-link">BOOK A CALL</a>
-        <a href="#" class="top-link">SUPPORT</a>
+        <a href="contact.html" class="top-link">BOOK A CALL</a>
+        <a href="contact.html" class="top-link">SUPPORT</a>
       </div>
       <!-- SOCIAL ICONS -->
       <div class="social-icons">
@@ -43,12 +43,12 @@
     </div>
 
     <!-- ================= MAIN NAVBAR ================= -->
-    <nav class="navbar navbar-expand-lg main-nav">
+    <nav class="navbar navbar-expand-lg main-nav py-0">
       <div class="container-fluid px-5">
         <!-- LOGO SECTION -->
         <a class="navbar-brand d-flex align-items-center" href="index.html">
           <!-- Replace with your Vertex logo -->
-          <img src="assets/logo.png" alt="Vertex Logo" height="60" />
+          <img src="assets/logo.png" alt="Vertex Logo" class="navbar-logo" />
         </a>
 
         <button
@@ -84,11 +84,6 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
-
-        <div class="search-btn d-none d-lg-block">
-          <i class="bi bi-search"></i>
-          <!-- Bootstrap icon -->
         </div>
       </div>
     </nav>
@@ -166,38 +161,64 @@
         </div>
 
         <div class="glass-grid">
+          <!-- 1. Data Intelligence -->
           <div class="glass-card">
             <div class="glass-icon">
               <i class="bi bi-bar-chart-line-fill"></i>
             </div>
             <h4>Data Intelligence Solutions</h4>
             <p>
-              Dashboards, Analytics, Forecasting & Visualization for faster
-              decisions.
+              Dashboards, analytics, forecasting, and data visualization to
+              enable faster, insight-driven decision-making.
             </p>
           </div>
 
+          <!-- 2. AI & Machine Learning -->
           <div class="glass-card">
-            <div class="glass-icon"><i class="bi bi-robot"></i></div>
+            <div class="glass-icon">
+              <i class="bi bi-robot"></i>
+            </div>
             <h4>AI & Machine Learning</h4>
             <p>
-              Custom models, automation pipelines & NLP-powered applications.
+              Custom AI models, intelligent automation pipelines, and
+              NLP-powered applications built for real-world impact.
             </p>
           </div>
 
+          <!-- 3. Engineering & Development -->
           <div class="glass-card">
-            <div class="glass-icon"><i class="bi bi-cloud-check-fill"></i></div>
+            <div class="glass-icon">
+              <i class="bi bi-cloud-check-fill"></i>
+            </div>
             <h4>Engineering & Development</h4>
             <p>
-              Cloud infrastructure, DevOps, pipelines & full-stack development.
+              Cloud-native platforms, DevOps pipelines, data engineering, and
+              full-stack application development.
             </p>
           </div>
 
+          <!-- 4. Technology Consulting -->
           <div class="glass-card">
-            <div class="glass-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <div class="glass-icon">
+              <i class="bi bi-lightbulb-fill"></i>
+            </div>
             <h4>Technology Consulting</h4>
             <p>
-              Digital transformation, roadmapping & implementation planning.
+              Digital transformation advisory, technology roadmapping, and
+              end-to-end implementation planning.
+            </p>
+          </div>
+
+          <!-- 5. Analytics & Data Capability Enablement -->
+          <div class="glass-card">
+            <div class="glass-icon">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <h4>Analytics & Data Capability Enablement</h4>
+            <p>
+              Practical, role-based training that builds internal analytics and
+              BI capability—enabling teams to confidently interpret insights,
+              use data tools, and make better decisions.
             </p>
           </div>
         </div>
@@ -235,9 +256,9 @@
               We now make decisions 60% faster thanks to automated dashboards."
             </p>
             <div class="client-info">
-              <img src="assets/user1.png" alt="client" class="client-img" />
+              <div class="client-avatar">EM</div>
               <div>
-                <h6 class="client-name">Enock Mires</h6>
+                <h6 class="client-name">Enock Miregwa</h6>
                 <span>Data Lead – FinTech Co.</span>
               </div>
             </div>
@@ -250,9 +271,9 @@
               efficiency. Truly outstanding results!"
             </p>
             <div class="client-info">
-              <img src="assets/user1.png" alt="client" class="client-img" />
+              <div class="client-avatar">SK</div>
               <div>
-                <h6 class="client-name">Sarah Kim</h6>
+                <h6 class="client-name">Sarah Kirui</h6>
                 <span>Operations Manager – Retail Co.</span>
               </div>
             </div>
@@ -265,9 +286,9 @@
               helped us scale our cloud infrastructure effortlessly."
             </p>
             <div class="client-info">
-              <img src="assets/user1.png" alt="client" class="client-img" />
+              <div class="client-avatar">ML</div>
               <div>
-                <h6 class="client-name">Michael Lee</h6>
+                <h6 class="client-name">Michael Lama</h6>
                 <span>CTO – Logistics Corp.</span>
               </div>
             </div>
@@ -286,7 +307,7 @@
               <img
                 src="assets/logo.png"
                 alt="Vertex Technology Partners"
-                height="55"
+                class="footer-logo-img"
               />
             </div>
             <p class="footer-about">
@@ -336,7 +357,7 @@
         </div>
 
         <div class="footer-bottom text-center mt-4 pt-3">
-          <p>© 2024 Vertex Technology Partners — All Rights Reserved.</p>
+          <p>© 2026 Vertex Technology Partners — All Rights Reserved.</p>
         </div>
       </div>
     </footer>

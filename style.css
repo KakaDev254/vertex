@@ -77,15 +77,10 @@ h5 {
   height: 55px;
 }
 
-/* Search icon */
-.search-btn i {
-  font-size: 22px;
-  color: #004f6a;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.search-btn i:hover {
-  color: #b22222;
+.navbar-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* ============ HERO BANNER STYLE ============ */
@@ -239,6 +234,30 @@ h5 {
   transition: 0.35s;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
 }
+.glass-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Center last two cards */
+.glass-card:nth-last-child(2),
+.glass-card:nth-last-child(1) {
+  grid-column: span 1;
+}
+
+@media (max-width: 992px) {
+  .glass-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .glass-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .glass-card:hover {
   transform: translateY(-10px) scale(1.03);
@@ -380,12 +399,33 @@ h5 {
   margin-top: 20px;
 }
 
-.client-img {
+/* ================= TESTIMONIAL AVATAR ================= */
+
+.client-avatar {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #b22222;
+  background: #b22222; /* brand red */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+/* Align avatar + text */
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Optional: subtle shadow for depth */
+.client-avatar {
+  box-shadow: 0 4px 12px rgba(178, 34, 34, 0.35);
 }
 
 .client-name {
@@ -414,8 +454,12 @@ h5 {
   color: #d9d9d9;
 }
 
-.footer-logo img {
+/* FOOTER LOGO */
+.footer-logo-img {
+  height: 110px; /* Bigger logo */
+  width: auto;
   filter: brightness(95%);
+  object-fit: contain;
 }
 
 .footer-about {
