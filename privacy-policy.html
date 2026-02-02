@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Privacy Policy | Vertex Technology Partners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap (optional but recommended) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Custom CSS -->
+    <style>
+      :root {
+        --brand-blue: #af1b1b;
+        --text-dark: #0f172a;
+        --text-muted: #475569;
+        --border-light: #e5e7eb;
+      }
+
+      /* ===== BASE ===== */
+      body {
+        font-family:
+          "Inter",
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        color: var(--text-dark);
+        background: #ffffff;
+        margin: 0;
+      }
+
+      /* ===== HERO (GARTNER STYLE) ===== */
+      .policy-hero {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 900px) 1fr;
+        min-height: 320px;
+        background: #ffffff;
+      }
+
+      /* Left slim brand bar */
+      .policy-hero-left {
+        background: var(--brand-blue);
+      }
+
+      /* Right wide brand block */
+      .policy-hero-right {
+        background: var(--brand-blue);
+      }
+
+      /* Center content */
+      .policy-hero-content {
+        padding: 5rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .policy-hero-content h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.03em;
+        color: var(--brand-blue);
+      }
+
+      .policy-hero-content p {
+        font-size: 1.2rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ===== CONTENT ===== */
+      .policy-wrapper {
+        max-width: 900px;
+        padding: 4rem 1.5rem;
+      }
+
+      .policy-section {
+        margin-bottom: 3rem;
+      }
+
+      .policy-section h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .policy-section h4 {
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+      }
+
+      .policy-section p {
+        line-height: 1.8;
+        color: #334155;
+      }
+
+      .policy-section ul {
+        padding-left: 1.2rem;
+        margin-top: 0.5rem;
+      }
+
+      .policy-section ul li {
+        margin-bottom: 0.5rem;
+        color: #334155;
+      }
+
+      /* ===== RESPONSIVE (KEEP BARS VISIBLE) ===== */
+      @media (max-width: 992px) {
+        .policy-hero {
+          grid-template-columns: 48px 1fr 48px;
+          min-height: 240px;
+        }
+
+        .policy-hero-content {
+          padding: 2.5rem 1.25rem;
+        }
+
+        .policy-hero-content h1 {
+          font-size: 2rem;
+        }
+
+        .policy-hero-content p {
+          font-size: 1rem;
+        }
+      }
+
+      /* ===== SMALL DEVICES ===== */
+      @media (max-width: 480px) {
+        .policy-hero {
+          grid-template-columns: 32px 1fr 32px;
+          min-height: 220px;
+        }
+
+        .policy-hero-content {
+          padding: 2rem 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= TOP INFO BAR ================= -->
+    <div
+      class="top-bar text-white py-2 px-3 d-flex justify-content-between align-items-center"
+    >
+      <div class="left-links">
+        <a href="contact.html" class="top-link">BOOK A CALL</a>
+        <a href="contact.html" class="top-link">SUPPORT</a>
+      </div>
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+
+    <!-- ================= MAIN NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg main-nav py-0">
+      <div class="container-fluid px-5">
+        <!-- LOGO SECTION -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <!-- Replace with your Vertex logo -->
+          <img src="assets/logo.png" alt="Vertex Logo" class="navbar-logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="mainNav"
+        >
+          <ul class="navbar-nav gap-4 text-uppercase fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Insights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ===== HERO ===== -->
+    <section class="policy-hero">
+      <div class="policy-hero-left"></div>
+
+      <div class="policy-hero-content">
+        <h1>Privacy Policy</h1>
+        <p>
+          <strong>Vertex Technology Partners</strong><br />
+          Effective Date: 27 January 2026<br />
+          Last Updated: 27 January 2026
+        </p>
+      </div>
+
+      <div class="policy-hero-right"></div>
+    </section>
+
+    <!-- ===== POLICY CONTENT ===== -->
+    <main class="policy-wrapper mx-auto">
+      <section class="policy-section">
+        <h2>1. Overview</h2>
+        <p>
+          Vertex Technology Partners respects your privacy and is committed to
+          protecting personal data. This Privacy Policy explains how we collect,
+          use, store, share, and protect information when you use our Services.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>2. Information We Collect</h2>
+
+        <h4>a) Information You Provide</h4>
+        <ul>
+          <li>Name, email address, phone number</li>
+          <li>Company and role information</li>
+          <li>Login credentials (via OAuth providers)</li>
+          <li>Communications and inquiries</li>
+        </ul>
+
+        <h4>b) Automatically Collected Information</h4>
+        <ul>
+          <li>IP address and device information</li>
+          <li>Browser and usage data</li>
+          <li>Log files and analytics events</li>
+        </ul>
+
+        <h4>c) Third-Party Platform Data</h4>
+        <p>
+          When you connect platforms such as TikTok or LinkedIn, we may receive:
+        </p>
+        <ul>
+          <li>Public profile information</li>
+          <li>Verification status</li>
+          <li>Authorized account identifiers</li>
+          <li>Content metadata (only with explicit consent)</li>
+        </ul>
+      </section>
+
+      <section class="policy-section">
+        <h2>3. How We Use Information</h2>
+        <ul>
+          <li>Provide and operate Services</li>
+          <li>Authenticate users</li>
+          <li>Deliver analytics, dashboards, and automation</li>
+          <li>Integrate third-party platforms</li>
+          <li>Improve system performance and security</li>
+          <li>Comply with legal obligations</li>
+        </ul>
+      </section>
+
+      <section class="policy-section">
+        <h2>4. Legal Basis for Processing</h2>
+        <ul>
+          <li>User consent</li>
+          <li>Contractual necessity</li>
+          <li>Legitimate business interests</li>
+          <li>Legal and regulatory requirements</li>
+        </ul>
+      </section>
+
+      <section class="policy-section">
+        <h2>5. Data Sharing & Disclosure</h2>
+        <p>We may share data with:</p>
+        <ul>
+          <li>Cloud infrastructure providers</li>
+          <li>Analytics and monitoring tools</li>
+          <li>Integrated platforms (TikTok, LinkedIn, Meta)</li>
+          <li>Legal or regulatory authorities when required</li>
+        </ul>
+        <p><strong>We do not sell personal data.</strong></p>
+      </section>
+
+      <section class="policy-section">
+        <h2>6. Data Security</h2>
+        <ul>
+          <li>Access controls and authentication</li>
+          <li>Encryption in transit and at rest</li>
+          <li>Secure cloud infrastructure</li>
+          <li>Monitoring and audit logging</li>
+        </ul>
+        <p>However, no system is completely secure.</p>
+      </section>
+
+      <section class="policy-section">
+        <h2>7. Data Retention</h2>
+        <p>
+          We retain data only as long as necessary to fulfill business purposes,
+          meet legal requirements, and resolve disputes.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>8. Your Rights</h2>
+        <ul>
+          <li>Access your data</li>
+          <li>Correct inaccuracies</li>
+          <li>Request deletion</li>
+          <li>Withdraw consent</li>
+          <li>Object to processing</li>
+        </ul>
+        <p>
+          Requests can be sent to
+          <a href="mailto:info@vertextechnologypartners.com">
+            info@vertextechnologypartners.com </a
+          >.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>9. Cookies & Tracking</h2>
+        <p>
+          We use cookies and analytics tools to improve performance, understand
+          usage patterns, and enhance user experience. You can control cookies
+          via browser settings.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>10. International Data Transfers</h2>
+        <p>
+          Data may be processed across borders using appropriate safeguards,
+          including GDPR-aligned protections.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>11. Children’s Privacy</h2>
+        <p>
+          Our Services are not intended for individuals under 18 years of age.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>12. Third-Party Links</h2>
+        <p>
+          Vertex Technology Partners is not responsible for the privacy
+          practices of external websites.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>13. Changes to This Policy</h2>
+        <p>Continued use of Services indicates acceptance of updates.</p>
+      </section>
+
+      <section class="policy-section">
+        <h2>14. Contact Us</h2>
+        <p>
+          <strong>Vertex Technology Partners</strong><br />
+          Email: info@vertextechnologypartners.com<br />
+          Website: https://vertextechnologypartners.com<br />
+          Location: Nairobi, Kenya
+        </p>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
